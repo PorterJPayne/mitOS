@@ -17,7 +17,7 @@ echo "[3/5] Copying GRUB configuration..."
 cp boot/grub/grub.cfg build/iso/boot/grub/grub.cfg
 
 echo "[4/5] Building ISO..."
-x86_64-elf-grub-mkrescue \
+grub-mkrescue \
     -o build/mitOS.iso \
     build/iso
 
